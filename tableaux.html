@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Tableaux</title>
+</head>
+<body>
+    <h1>Tableaux en HTML</h1>
+
+    <h2>Tableau basique</h2>
+    <table>
+        <tbody>
+            <tr>
+                <th>Articles</th>
+                <th>Quantité</th>
+            </tr>
+            <tr>
+                <td>Pomme</td>
+                <td>45kg</td>
+            </tr>
+            <tr>
+                <td>Poire</td>
+                <td>59kg</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Tableaux complet sémantiquement</h2>
+    <table>
+        <!-- Entête du tableau -->
+        <thead>
+            <tr>
+                <th>Articles</th>
+                <th>Quantité</th>
+                <th>P.U.</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+
+        <!-- Données du tableau -->
+        <tbody>
+            <tr>
+                <td>Pomme</td>
+                <td>3kg</td>
+                <td>3€</td>
+                <td>9€</td>
+            </tr>
+            <tr>
+                <td>Poire</td>
+                <td>5kg</td>
+                <td>5€</td>
+                <td>25€</td>
+            </tr>
+        </tbody>
+
+        <!-- Pied du tableau -->
+        <tfoot>
+            <tr>
+                <!-- colspan permet de prendre la place du nombre de colonnes donné -->
+                <!-- rowspan permet de prendre la place du nombre de lignes donné -->
+                <th colspan="2" rowspan="3">Synthèse</th>
+                <th>Total H.T.</th>
+                <td>34€</td>
+            </tr>
+            <tr>
+                <th>T.V.A.</th>
+                <td>7€</td>
+            </tr>
+            <tr>
+                <th>Total T.T.C.</th>
+                <td>41€</td>
+            </tr>
+            <tr>
+                <th>Une ligne de plus</th>
+                <td>toto</td>
+                <td>he</td>
+                <td>he</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
